@@ -166,6 +166,11 @@ namespace Food_Delivery_System.Controllers
             finally { db.CloseConnection(); }
         }
 
+        public static int RegisterRestaurant(string username, string password, string name, string address, TimeSpan open, TimeSpan close)
+        {
+            return RegisterRestaurant(username, password, name, "N/A", address, open, close);
+        }
+
         public static int RegisterRider(string username, string password, string name, string description, string address)
         {
             var db = new DBConnection();

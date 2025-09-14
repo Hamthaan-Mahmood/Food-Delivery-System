@@ -11,7 +11,7 @@ namespace Food_Delivery_System.Models
         public int ID { get; set; }
         public string Username { get; set; } = "";
         public string Password { get; set; } = "";   // keep simple to match your DB
-        public string Role { get; set; } = "Customer"; // Customer | Restaurant | Rider | Admin
+        public string Role { get; set; } = "Customer"; // Customer | Restaurant | Rider
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }
